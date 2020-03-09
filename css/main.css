@@ -633,7 +633,6 @@ footer .copyright a {
     font-size: 3.5em;
   }
 
-
 /***** team styles *****/
 
   .team article {
@@ -673,23 +672,43 @@ footer .copyright a {
 /* General Styles */
 
   .content-wrapper {
-    max-width: 960px;
+    max-width: 1200px;
+  }
+
+  h1 {
+    font-size: 3.25em;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  h3, h4 {
+    font-size: 1.625em;
+  }
+
+  p {
+    font-size: 1.25em;
   }
 
 /***** header and footer styles *****/
-
-  header nav {
-    width: 90%;
-  }
 
   header .logo {
     flex: 1;
     text-align: left;
   }
 
+  header .logo a {
+    font-size: 1.5em;
+  }
+
   header .item {
     display: block;
     width: auto;
+  }
+
+  header .item a {
+    font-size: 1.125em;
   }
 
   header .toggle {
@@ -700,20 +719,48 @@ footer .copyright a {
     padding: 10px;
   }
 
-/***** hero area styles ***** /
+
+/***** hero area styles *****/
+
+  .hero-area {
+    min-height: 750px;
+  }
+
+  .hero-area h2 {
+    font-size: 2.25em;
+  }
+
+  .hero-area .button {
+    margin-top: 40px;
+  }
+
+  .hero-area .button a {
+    font-size: 1.25em;
+  }
 
 /***** about styles *****/
 
   .about article {
-    margin: 0 10px;
+    margin: 0 15px;
     width: 30%;
   }
 
 /***** services section *****/
 
+  .services h2 {
+    margin-bottom: 33.2px;
+  }
+
+  .services i {
+    font-size: 72px;
+  }
+
   .services article {
-    margin: 0 15px;
     width: 30%;
+  }
+
+  .services .services-content {
+    justify-content: space-between;
   }
 
 /***** team section *****/
