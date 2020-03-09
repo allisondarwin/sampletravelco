@@ -171,11 +171,15 @@ header, footer {
   align-items: center;
 }
 
+header {
+  background: #fff;
+}
+
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 15px 0;
+  margin: 0;
 }
 
 header nav {
@@ -225,7 +229,7 @@ header .item.active {
 
 footer {
   background: #3d0066;
-  color: white;
+  color: #fff;
 }
 
 footer .content-wrapper {
@@ -273,6 +277,10 @@ footer .copyright p {
   font-size: 0.875em;
 }
 
+footer .copyright a {
+  color: #fff;
+}
+
 /****for responsive nav, checkout --> https://www.w3schools.com/howto/howto_js_mobile_navbar.asp and https://www.w3schools.com/howto/howto_js_topnav_responsive.asp***/
 
 /***** hero area styles *****/
@@ -283,7 +291,7 @@ footer .copyright p {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 500px;
+  min-height: 600px;
 }
 
 .hero-area .content-wrapper {
@@ -306,6 +314,7 @@ footer .copyright p {
 .hero-area .button a {
   padding: 7.5px 15px;
   background: white;
+  border-radius: 5px;
 }
 
 .hero-area .button a:hover {
@@ -374,7 +383,7 @@ footer .copyright p {
 }
 
 .services .fontawesome-icon {
-  font-size: 48px;
+  font-size: 3em;
   margin: 25px 0 0;
 }
 
@@ -566,12 +575,30 @@ footer .copyright p {
 
    .content-wrapper {
      max-width: 640px;
-     margin: 100px 0;
+     margin: 75px 0;
+   }
+
+   h1 {
+     font-size: 2.25em;
+   }
+
+   h2 {
+     font-size: 2.25em;
+   }
+
+   h3, h4 {
+     font-size: 1.5em;
+   }
+
+   p {
+     font-size: 1.125em;
    }
 
 /***** header and footer styles *****/
 
-  /***note - need to come back and add header/nav styles***/
+  header .toggle, header .logo {
+    font-size: 1.5em;
+  }
 
   footer .footer-content {
     flex-flow: row wrap;
@@ -580,6 +607,7 @@ footer .copyright p {
   }
 
   footer h3 {
+    font-size: 2em;
     width: 100%;
   }
 
@@ -589,7 +617,22 @@ footer .copyright p {
 
 /***** hero area styles *****/
 
+  .hero-area h2 {
+    font-size: 1.5em;
+  }
+
 /***** about styles *****/
+
+  .about .content-wrapper {
+    margin: 20px 0;
+  }
+
+/**** service styles ****/
+
+  .services .fontawesome-icon {
+    font-size: 3.5em;
+  }
+
 
 /***** team styles *****/
 
@@ -598,7 +641,27 @@ footer .copyright p {
     margin: 0 20px;
   }
 
+/***** FAQ styles *****/
 
+  .faq article {
+    display: flex;
+  }
+
+  .faq .faq-content {
+    text-align: left;
+  }
+
+  .faq i {
+    font-size: 52px;
+  }
+
+  .faq h3 {
+    margin-top: 10px;
+  }
+
+  .faq p {
+    margin-left: 20px;
+  }
 
 
 
@@ -614,6 +677,28 @@ footer .copyright p {
   }
 
 /***** header and footer styles *****/
+
+  header nav {
+    width: 90%;
+  }
+
+  header .logo {
+    flex: 1;
+    text-align: left;
+  }
+
+  header .item {
+    display: block;
+    width: auto;
+  }
+
+  header .toggle {
+    display: none;
+  }
+
+  header .menu li {
+    padding: 10px;
+  }
 
 /***** hero area styles ***** /
 
@@ -639,11 +724,7 @@ footer .copyright p {
 
 /***** faq section *****/
 
-  .faq article {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-  }
+
 
 
 }
